@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Product">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text layoutX="14.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv" />
+      <Text layoutX="14.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+      <Text layoutX="14.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" />
+      <TextField fx:id="modifyidTxt" disable="true" layoutX="80.0" layoutY="78.0" text="Auto - Generated" />
+      <TextField fx:id="modifynameTxt" layoutX="80.0" layoutY="118.0" />
+      <TextField fx:id="modifyinventoryTxt" layoutX="80.0" layoutY="158.0" />
+      <TextField fx:id="modifypriceTxt" layoutX="80.0" layoutY="198.0" />
+      <TextField fx:id="modifymaxTxt" layoutX="80.0" layoutY="238.0" />
+      <Text layoutX="246.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" />
+      <TextField fx:id="modifyminTxt" layoutX="312.0" layoutY="238.0" />
+      <Button layoutX="661.0" layoutY="294.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Save" />
+      <Button layoutX="734.0" layoutY="294.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Cancel" />
+      <Button layoutX="661.0" layoutY="259.0" mnemonicParsing="false" text="Remove Associated Part" />
+      <TableView layoutX="488.0" layoutY="22.0" prefHeight="96.0" prefWidth="316.0">
+        <columns>
+          <TableColumn fx:id="partidCol" prefWidth="44.79998779296875" text="Part ID" />
+          <TableColumn fx:id="partnameCol" prefWidth="64.800048828125" text="Part Name" />
+            <TableColumn fx:id="inventorylevelCol" prefWidth="92.0" text="Inventory Level" />
+            <TableColumn fx:id="partpriceCol" prefWidth="112.0" text="Price/Cost per Unit" />
+        </columns>
+      </TableView>
+      <TableView layoutX="488.0" layoutY="163.0" prefHeight="96.0" prefWidth="316.0">
+         <columns>
+            <TableColumn fx:id="partidCol" prefWidth="44.79998779296875" text="Part ID" />
+            <TableColumn fx:id="partnameCol" prefWidth="64.800048828125" text="Part Name" />
+            <TableColumn fx:id="inventorylevelCol" prefWidth="92.0" text="Inventory Level" />
+            <TableColumn fx:id="partpriceCol" prefWidth="112.0" text="Price/Cost per Unit" />
+         </columns>
+      </TableView>
+      <Button layoutX="733.0" layoutY="117.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Add" />
+   </children>
+</AnchorPane>
